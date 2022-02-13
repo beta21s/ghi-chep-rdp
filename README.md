@@ -14,5 +14,4 @@ Và dán đoạn lệnh bên dưới vào
 unset DBUS_SESSION_BUS_ADDRESS
 unset XDG_RUNTIME_DIR
 . $HOME/.profile
-
 ```
