@@ -6,4 +6,13 @@ Lưu ý chạy lệnh script trên tài khoản không phải quyền root
 ```
 chmod +x  xrdp-installer-1.2.3.sh
 bash xrdp-installer-1.2.3.sh
+
+# Cấu hình fix lỗi
+nano /etc/xrdp/startwm.sh
+
+Và dán đoạn lệnh bên dưới vào
+unset DBUS_SESSION_BUS_ADDRESS
+unset XDG_RUNTIME_DIR
+. $HOME/.profile
+
 ```
